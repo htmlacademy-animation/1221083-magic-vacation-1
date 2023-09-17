@@ -17,6 +17,29 @@
   @media (max-width: $tablet - 1) and (orientation: landscape) {
     height: 100vh;
   }
+
+  &--intro{
+    &.active{
+      .intro__message{
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  &--story{
+    &.active{
+
+    }
+  }
+  &--game{
+    &.active{
+      .form__field{
+        width: calc(100% - 21rem);
+        padding: 0 5.6rem;
+        transition: width 0.5s linear, padding 0.5s linear;
+      }
+    }
+  }
 }
 
 .screen__wrapper {
